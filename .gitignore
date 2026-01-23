@@ -1,0 +1,9 @@
+# Ignore everything
+*
+
+# Allow the .gitignore
+!.gitignore
+
+# Allow the mod's Scripts folder
+!Scripts/
+!Scripts/**
