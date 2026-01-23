@@ -4,6 +4,9 @@
 # Allow the .gitignore
 !.gitignore
 
+# Allow the README
+!README.md
+
 # Allow the mod's Scripts folder
 !Scripts/
 !Scripts/**
