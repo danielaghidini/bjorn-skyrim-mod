@@ -9,6 +9,9 @@
 
 Scriptname DG04ABjornFollowQuestCtrl extends Quest  
 
+;======================================================================================
+; PROPERTIES
+;======================================================================================
 Actor Property BjornRef Auto
 Actor Property ShagraRef Auto
 Actor Property AdielleRef Auto
@@ -16,9 +19,10 @@ Actor Property AdielleVampRef Auto
 Actor Property AdielleFinalRef Auto
 Actor Property ThruzarRef Auto
 Actor Property SvenRef Auto
-
+Actor Property ConstanceRef  Auto  
+Actor Property BarniRef Auto
+Actor Property DanicaRef Auto
 Faction Property CurrentFollowerFaction Auto
-
 GlobalVariable Property BjornFollowTimer Auto
 GlobalVariable Property GlobalNpcsAliases Auto
 GlobalVariable Property OldBjornTimer01 Auto
@@ -30,7 +34,11 @@ GlobalVariable Property BjornMemDB Auto
 GlobalVariable Property BjornMemCO Auto
 GlobalVariable Property DG04GroshakReturns Auto
 GlobalVariable Property DG04AdielleFriendship Auto
-
+GlobalVariable Property GlobalBardDay Auto
+GlobalVariable Property GlobalFocus Auto
+GlobalVariable Property globalRegisterSleep Auto 
+GlobalVariable Property globalGoodMorning Auto
+GlobalVariable Property GlobalAdielleFalion Auto
 Quest Property QuestNpcs Auto
 Quest Property QuestFollow Auto
 Quest Property QuestMemories Auto
@@ -39,60 +47,41 @@ Quest Property QuestCold Auto
 Quest Property QuestBarniAdopted Auto
 Quest Property QuestC00 Auto
 Quest Property MQ104 Auto
-
+Quest Property BardQuest Auto
+Quest Property QuestLS Auto
+Quest Property DestroyDB Auto
+Quest Property BjornFamilyQuest Auto
+Quest Property DawnguardPrevQuest Auto
+Quest Property DGDawnguardQuest Auto
+Quest Property AdielleFollowQuest Auto
+Quest Property QuestThruzarFollow Auto
+Quest Property QuestGroshak Auto
+Quest Property LastQuest Auto 
+Quest Property AdielleRedemption Auto 
 ReferenceAlias Property AliasVoiceAdielle Auto
 ReferenceAlias Property AliasBjornThruzar Auto
 ReferenceAlias Property AliasShagraBasement Auto
 ReferenceAlias Property SvenAliasScenes Auto
 ReferenceAlias Property SvenAliasNPCs Auto
-
-;Bard Quest Fix
-Quest Property BardQuest Auto
-GlobalVariable Property GlobalBardDay Auto
 ReferenceAlias Property AliasBjornCollege Auto
 ReferenceAlias Property AliasBjornSkeever Auto
-
-;DDB fix
-Quest Property QuestLS Auto
-Quest Property DestroyDB Auto
 ReferenceAlias Property AliasLSKill Auto
-Quest Property BjornFamilyQuest Auto
-
-;Barni Adopted Aliases
-Actor Property ConstanceRef  Auto  
-Actor Property BarniRef Auto
-Actor Property DanicaRef Auto
 ReferenceAlias Property BarniAliasAdoption Auto
 ReferenceAlias Property DanicaAliasAdoption Auto
 ReferenceAlias Property BjornAliasAdoption Auto
 ReferenceAlias Property ConstanceAliasAdoption Auto
 ReferenceAlias Property BarniFollowQuestAlias Auto
-
-Quest Property DawnguardPrevQuest Auto
-Quest Property DGDawnguardQuest Auto
-Quest Property AdielleFollowQuest Auto
-
-Quest Property QuestThruzarFollow Auto
-Quest Property QuestGroshak Auto
 ReferenceAlias Property ThruzarForceGreet02Alias Auto
 ReferenceAlias Property ThruzarSoulQPatrol Auto
 ReferenceAlias Property AdielleFinalMarker Auto
-Keyword Property LocTypeInn Auto
 ReferenceAlias Property ThruzarMapMarker Auto
-Quest Property LastQuest Auto 
-Quest Property AdielleRedemption Auto 
+ReferenceAlias Property AliasScenesVampAdielle Auto
+ReferenceAlias Property AliasScenesThruzar Auto
 Location Property RiftenInnLocation Auto
 Location Property WinterholdInnLocation Auto
 Location Property KynesgroveInnLocation Auto
 Location Property WindhelmInnLocation Auto
-
-ReferenceAlias Property AliasScenesVampAdielle Auto
-ReferenceAlias Property AliasScenesThruzar Auto
-
-GlobalVariable Property GlobalFocus Auto
-GlobalVariable Property globalRegisterSleep Auto 
-GlobalVariable Property globalGoodMorning Auto
-GlobalVariable Property GlobalAdielleFalion Auto
+Keyword Property LocTypeInn Auto
 
 ;======================================================================================
 ; GROSHAK MINE - SOUL CHAINS
